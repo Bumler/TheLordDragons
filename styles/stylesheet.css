@@ -1,0 +1,91 @@
+.site-background {
+  background: #efefef; }
+
+.absolute {
+  position: absolute; }
+
+.white-text {
+  color: #fff; }
+
+.hero {
+  background: url("../img/LordDarkDragon.jpg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .hero .gradient {
+    content: '';
+    height: 50vh;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; }
+  .hero h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center; }
+  .hero h2 {
+    color: #fff;
+    line-height: 1.75em;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .hero .drag-img {
+    background: url("../img/dragonIco.png") no-repeat center center;
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    display: block; }
+  @media screen and (max-width: 768px) {
+    .hero .drag-img {
+      margin: 0 auto;
+      height: 10rem;
+      width: 10rem; }
+    .hero h2 {
+      font-size: 1.5rem;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (min-width: 769px) {
+    .hero .drag-img {
+      margin: 0 auto;
+      height: 20rem;
+      width: 20rem; }
+    .hero h2 {
+      font-size: 2.5rem; } }
+  @media screen and (min-width: 992px) {
+    .hero .tech-img {
+      height: 20rem;
+      width: 20rem; }
+    .hero h1 {
+      padding-top: 3rem;
+      font-size: 5rem; }
+    .hero h2 {
+      font-size: 3rem; }
+    .hero .drag-img {
+      margin-left: 5rem;
+      height: 30rem;
+      width: 30rem; } }
+
+.splash:hover {
+  filter: brightness(35%); }
+
+.content {
+  text-align: center; }
+
+.no-margins {
+  margin: 0px 0px 0px 0px; }
+
+p {
+  font-size: 18px; }
+
+.y-margin {
+  margin-top: 15px; }
+
+.yy-margin {
+  margin-top: 30px; }
+
+.y-margin-bot {
+  margin-bottom: 15px; }
+
+.footer {
+  margin-top: 50px; }

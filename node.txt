@@ -1,0 +1,9 @@
+npm install node-sass
+npm install bootstrap-sass
+npm install angular@1.6.2
+
+node-sass -o styles styles/stylesheet.scss
+
+a:
+cd documents/webdesign/thelorddragons/lorddragons
+Browser-sync start --server --directory --files “**/*”

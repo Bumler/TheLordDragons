@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="lordDragonApp" ng-strict-di>
+<!-- <html lang="en" ng-app> -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Lord Dragons</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src ="app\app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="lordDragonController">
+	<div class="container-fluid site-background">
+		<section class="hero">
+			<div class="row gradient no-margins" style="padding-top: 7vh">
+				<div class="col-sm-12 col-md-6 col-lg-6">
+					<div class="drag-img"></div>
+				</div>
+				<div class="col-lg-2"></div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<h1>The Lord Dragons</h1>
+					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h2>
+				</div>
+			</div>
+		</section>
+		
+		<div class ="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 col-md-12 content">
+				<h2>Who are we?</h2>
+				<p>We are the shots raining from above. The speeding missile demolishing our rivals. We are the clean center, the epic save and the impenetrable defense. We are constantly spamming ‘Nice Shot’! We are tenacious. We are unbeatable. We are the reason that players forfeit. We are The Lord Dragons.
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+
+			<div class="row y-margin">
+				<h2 class="content">Some of our highlights</h2>
+				<div class="col-lg-4 col-md-3 col-sm-2"></div>
+				<img class="col-lg-4 col-md-6 col-sm-8 col-xs-12" src="../img/highlight.gif">
+				<div class="col-lg-4 col-md-3 col-sm-2"></div>
+			</div>
+
+			<div class="row yy-margin">
+				<h2 class="content">Meet the Dragons</h2>
+				<div class="container-fluid">
+					<div class="col-lg-2 col-sm-2"></div>
+					<div class="col-lg-8 col-sm-8 content">
+						<img class="col-lg-3 col-sm-6 col-xs-6 y-margin-bot"
+						ng-repeat="dragon in dragons" 
+						ng-click="selectDragon(dragon)"
+						src={{dragon.icon}}>
+					</div>
+					<div class="col-lg-2 col-sm-2"></div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="col-lg-2 col-sm-2"></div>
+					<div class="col-lg-8 col-sm-8 col-xs-12">
+						<img class="splash col-lg-12 col-sm-12 col-xs-12" 
+						src={{selectedDragon.splash}}>
+						<div ng-show="hover=true" class="absolute col-lg-4 col-xs-4">
+							<h2 class="white-text">{{selectedDragon.name}}</h2>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-2"></div>
+				</div>
+			</div>
+
+			<div class="footer"></div>
+		</div>
+</body>
+			<div class="col-lg-3"></div>
+		</div>
+	</div>
+</body>
+</html>
