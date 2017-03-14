@@ -5,5 +5,5 @@ npm install angular@1.6.2
 node-sass -o styles styles/stylesheet.scss
 
 a:
-cd documents/webdesign/thelorddragons/lorddragons
+cd documents/webdesign/thelorddragons
 Browser-sync start --server --directory --files “**/*”
