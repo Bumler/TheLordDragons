@@ -10,6 +10,8 @@ var lordDragonApp = angular.module('lordDragonApp', [])
 
 .controller('lordDragonController', ['$scope', function($scope){
 
+	$scope.hover = false;
+
 	$scope.selectDragon = function(dragon){
 		$scope.selectedDragon.selected = true;
 		$scope.selectedDragon.name = dragon.name;
@@ -42,7 +44,7 @@ var lordDragonApp = angular.module('lordDragonApp', [])
 
 	$scope.selectedDragon = {
 		selected: false,
-		name: "LordSpaceDragon",
+		name: "Lord Space Dragon",
 		icon: "../img/LSD_ico.jpg",
 		splash: "../img/LordSpaceDragon.jpg"
 	}
