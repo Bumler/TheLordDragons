@@ -75,6 +75,9 @@
 .no-margins {
   margin: 0px 0px 0px 0px; }
 
+.no-padding {
+  padding: 0px; }
+
 p {
   font-size: 18px; }
 
