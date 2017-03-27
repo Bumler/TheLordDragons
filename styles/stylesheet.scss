@@ -12,7 +12,7 @@
 
 .hero {
   // background: url('../img/LordDarkDragon.jpg') no-repeat center center;
-  background-size: cover;
+  //background-size: cover;
   height: 50vh; 
   margin-left: -15px;
   margin-right: -15px;
@@ -90,6 +90,12 @@
       width: 30rem;
     }
   }
+}
+
+.gold-border{
+  border-style: solid;
+  border-color: gold;
+  border-width: 5px;
 }
 
 .splash{

@@ -48,6 +48,7 @@
 					<div class="col-lg-2 col-sm-2"></div>
 					<div class="col-lg-8 col-sm-8 content">
 						<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
+						ng-class="{'gold-border':dragon.name === selectedDragon.name}"
 						ng-repeat="dragon in dragons" 
 						ng-click="selectDragon(dragon)"
 						src={{dragon.icon}}>
