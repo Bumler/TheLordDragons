@@ -41,7 +41,6 @@
 			<div class="row y-margin">
 				<h1 class="content">Some of our highlights</h1>
 				<div class="col-lg-4 col-md-3 col-sm-2"></div>
-				<!-- <img class="col-lg-4 col-md-6 col-sm-8 col-xs-12" src="../img/highlight.gif"> -->
 				<iframe class="col-lg-4 col-md-6 col-sm-8 col-xs-12" height="315" src="https://www.youtube.com/embed/WBXys0QhXRA" frameborder="0" allowfullscreen></iframe>
 				<div class="col-lg-4 col-md-3 col-sm-2"></div>
 			</div>
@@ -53,9 +52,7 @@
 				<div class="col-lg-2 col-sm-2"></div>
 				<div class="col-lg-8 col-sm-8 content">
 					<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
-					ng-class="{'gold-border':dragon.name === selectedDragon.name}"
 					ng-repeat="dragon in dragons" 
-					ng-click="selectDragon(dragon)"
 					src={{dragon.icon}}>
 				</div>
 				<div class="col-lg-2 col-sm-2"></div>
@@ -64,15 +61,6 @@
 			<div class="row">
 				<div class="col-lg-2 col-sm-2"></div>
 				<div class="col-lg-8 col-sm-8 col-xs-12">
-<!-- 					<img ng-mouseenter="hover=true" ng-mouseleave="hover=false" 
-					class="splash col-lg-12 col-sm-12 col-xs-12 no-padding" 
-					src={{selectedDragon.splash}}>
-					<div ng-show="hover" class="row yy-margin absolute" style="width: 100%">
-						<div class="col-xs-12 content white-text">
-							<h1>{{selectedDragon.name}}</h1>
-							<p>{{selectedDragon.title}}</p>
-						</div>
-						<p class="glyphicon glyphicon-chevron-left"></p> -->
 						<div>
 							<div uib-carousel active="active" no-wrap="noWrapSlides" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
 								<div uib-slide ng-repeat="dragon in dragons track by dragon.index" index="dragon.index">

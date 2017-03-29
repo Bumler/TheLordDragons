@@ -1,3 +1,5 @@
+Install in admin mode!
+
 npm install node-sass
 npm install bootstrap-sass
 npm install angular@1.6.2
