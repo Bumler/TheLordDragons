@@ -69,7 +69,7 @@
   border-color: gold;
   border-width: 5px; }
 
-.splash:hover {
+.splash {
   filter: brightness(35%); }
 
 .content {

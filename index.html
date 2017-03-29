@@ -8,8 +8,12 @@
 	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
 	<script src="/node_modules/angular/angular.js"></script>
 	<script src ="app\app.js"></script>
+	<script src="/node_modules/angular-animate/angular-animate.js"></script>
+	<script src="/node_modules/angular-touch/angular-touch.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 </head>
+
 <body ng-controller="lordDragonController">
 	<div class="container-fluid site-background">
 		<section class="hero" style="background: url({{splashDragon.splash}}) no-repeat; background-position: {{splashDragon.splashPosition}}; background-size: cover;">
@@ -21,15 +25,15 @@
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<h1>The Lord Dragons</h1>
 					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h1>
+					</div>
 				</div>
-			</div>
-		</section>
-		
-		<div class ="row">
-			<div class="col-lg-3"></div>
-			<div class="col-lg-6 col-md-12 content">
-				<h1>Who are we?</h1>
-				<p>We are the shots raining from above. The speeding missile demolishing our rivals. We are the clean center, the epic save and the impenetrable defense. We are constantly spamming ‘Nice Shot’! We are tenacious. We are unbeatable. We are the reason that players forfeit. We are The Lord Dragons.</p>
+			</section>
+
+			<div class ="row">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6 col-md-12 content">
+					<h1>Who are we?</h1>
+					<p>We are the shots raining from above. The speeding missile demolishing our rivals. We are the clean center, the epic save and the impenetrable defense. We are constantly spamming ‘Nice Shot’! We are tenacious. We are unbeatable. We are the reason that players forfeit. We are The Lord Dragons.</p>
 				</div>
 				<div class="col-lg-3"></div>
 			</div>
@@ -44,40 +48,51 @@
 			<div class="row yy-margin">
 				<h1 class="content">Meet the Dragons</h1>
 			</div>
-				<div class="row">
-					<div class="col-lg-2 col-sm-2"></div>
-					<div class="col-lg-8 col-sm-8 content">
-						<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
-						ng-class="{'gold-border':dragon.name === selectedDragon.name}"
-						ng-repeat="dragon in dragons" 
-						ng-click="selectDragon(dragon)"
-						src={{dragon.icon}}>
-					</div>
-					<div class="col-lg-2 col-sm-2"></div>
-					</div>
+			<div class="row">
+				<div class="col-lg-2 col-sm-2"></div>
+				<div class="col-lg-8 col-sm-8 content">
+					<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
+					ng-class="{'gold-border':dragon.name === selectedDragon.name}"
+					ng-repeat="dragon in dragons" 
+					ng-click="selectDragon(dragon)"
+					src={{dragon.icon}}>
+				</div>
+				<div class="col-lg-2 col-sm-2"></div>
+			</div>
 
-				<div class="row">
-					<div class="col-lg-2 col-sm-2"></div>
-					<div class="col-lg-8 col-sm-8 col-xs-12">
-						<img ng-mouseenter="hover=true" ng-mouseleave="hover=false" 
-						class="splash col-lg-12 col-sm-12 col-xs-12 no-padding" 
-						src={{selectedDragon.splash}}>
-						<div class="row yy-margin absolute" style="width: 100%">
-						<div ng-show="hover" class="col-xs-12 content white-text">
+			<div class="row">
+				<div class="col-lg-2 col-sm-2"></div>
+				<div class="col-lg-8 col-sm-8 col-xs-12">
+<!-- 					<img ng-mouseenter="hover=true" ng-mouseleave="hover=false" 
+					class="splash col-lg-12 col-sm-12 col-xs-12 no-padding" 
+					src={{selectedDragon.splash}}>
+					<div ng-show="hover" class="row yy-margin absolute" style="width: 100%">
+						<div class="col-xs-12 content white-text">
 							<h1>{{selectedDragon.name}}</h1>
 							<p>{{selectedDragon.title}}</p>
 						</div>
+						<p class="glyphicon glyphicon-chevron-left"></p> -->
+						<div>
+							<div uib-carousel active="active" no-wrap="noWrapSlides" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
+								<div uib-slide ng-repeat="dragon in dragons track by dragon.index" index="dragon.index">
+									<img ng-src="{{dragon.splash}}" ng-class="{'splash': hover === true}" style="margin:auto; width: 100%">
+									<div class="carousel-caption" ng-show="hover">
+										<h1>{{dragon.name}}</h1>
+										<p>{{dragon.title}}</p>
+									</div>
+								</div>
+							</div>
 						</div>
+
 					</div>
-					<div class="col-lg-2 col-sm-2"></div>
 				</div>
-
-
-
-			<div class="footer"></div>
+			</div>
 		</div>
-	</body>
-	<div class="col-lg-3"></div>
+
+		<div class="footer"></div>
+	</div>
+</body>
+<div class="col-lg-3"></div>
 </div>
 </div>
 </body>
