@@ -1,4 +1,4 @@
-var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap'])
+var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate'])
 
 // LordDragonApp.config(function(){
 // 	//anything that needs to happen before the app runs
@@ -21,6 +21,7 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap'])
 	};
 
 	$scope.selectedDragon = {};
+	$scope.selectedIndex = 0;
 
 	$scope.dragons = [
 	{

@@ -1,6 +1,9 @@
 npm install node-sass
 npm install bootstrap-sass
 npm install angular@1.6.2
+npm install --save angular-animate@1.6.2
+npm install --save angular-touch@1.6.2
+npm install angular-ui-bootstrap
 
 node-sass -o styles styles/stylesheet.scss
 
