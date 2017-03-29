@@ -62,8 +62,11 @@
 						<img ng-mouseenter="hover=true" ng-mouseleave="hover=false" 
 						class="splash col-lg-12 col-sm-12 col-xs-12 no-padding" 
 						src={{selectedDragon.splash}}>
-						<div class="absolute col-lg-4 col-xs-4">
-							<h1 ng-show="hover" class="white-text">{{selectedDragon.name}}</h1>
+						<div class="row yy-margin absolute" style="width: 100%">
+						<div ng-show="hover" class="col-xs-12 content white-text">
+							<h1>{{selectedDragon.name}}</h1>
+							<p>{{selectedDragon.title}}</p>
+						</div>
 						</div>
 					</div>
 					<div class="col-lg-2 col-sm-2"></div>

@@ -82,7 +82,10 @@
   padding: 0px; }
 
 p {
-  font-size: 18px; }
+  font-size: 24px; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 18px; } }
 
 .y-margin {
   margin-top: 15px; }

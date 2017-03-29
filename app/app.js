@@ -15,6 +15,7 @@ var lordDragonApp = angular.module('lordDragonApp', [])
 	$scope.selectDragon = function(dragon){
 		$scope.selectedDragon.selected = true;
 		$scope.selectedDragon.name = dragon.name;
+		$scope.selectedDragon.title = dragon.title;
 		$scope.selectedDragon.icon = dragon.icon;
 		$scope.selectedDragon.splash = dragon.splash;
 	}
@@ -30,12 +31,14 @@ var lordDragonApp = angular.module('lordDragonApp', [])
 			},
 			{
 				name: "Lord Dark Dragon",
+				title: "Team Captain",
 				icon: "../img/LDD_ico.jpg",
 				splash: "../img/LordDarkDragon.jpg",
 				splashPosition: "center center"
 			},
 			{
 				name: "Lord Alchemist Dragon",
+				title: "The Demolisher",
 				icon: "../img/LAD_ico.jpg",
 				splash: "../img/LordAlchemistDragon.jpg",
 				splashPosition: "center 7%"
