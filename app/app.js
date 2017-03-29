@@ -12,20 +12,10 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 
 	$scope.hover = false;
 
-	$scope.selectDragon = function(dragon){
-		$scope.selectedDragon.selected = true;
-		$scope.selectedDragon.name = dragon.name;
-		$scope.selectedDragon.title = dragon.title;
-		$scope.selectedDragon.icon = dragon.icon;
-		$scope.selectedDragon.splash = dragon.splash;
-	};
-
-	$scope.selectedDragon = {};
-	$scope.selectedIndex = 0;
-
 	$scope.dragons = [
 	{
 		name: "Lord Space Dragon",
+		title: "The Creator",
 		icon: "../img/LSD_ico.jpg",
 		splash: "../img/LordSpaceDragon.jpg",
 		splashPosition: "center center",
@@ -33,7 +23,7 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 	},
 	{
 		name: "Lord Dark Dragon",
-		title: "Team Captain",
+		title: "The Captain",
 		icon: "../img/LDD_ico.jpg",
 		splash: "../img/LordDarkDragon.jpg",
 		splashPosition: "center center",
@@ -70,6 +60,5 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		$scope.splashDragon.splashPosition = dragon.splashPosition;
 	};
 
-	$scope.selectDragon($scope.dragons[0]);
 	$scope.selectSplash($scope.dragons[1]);
 }]);
