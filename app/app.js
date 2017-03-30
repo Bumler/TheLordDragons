@@ -15,10 +15,9 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 	$scope.dragons = [
 	{
 		name: "Lord Space Dragon",
-		title: "The Creator",
+		title: "The Shooting Star",
 		icon: "../img/LSD_ico.jpg",
 		splash: "../img/LordSpaceDragon.jpg",
-		splashPosition: "center center",
 		index: 0,
 		lore: "Lord Space Dragon floats through the cosmos bringing epic saves and beautiful goals wherever he travels. With the ability to fly at the speed of light and strike with the force of a thousand suns opponents would have better luck trying to escape a black hole than defeat Lord Space Dragon."
 	},
@@ -27,27 +26,25 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		title: "The Captain",
 		icon: "../img/LDD_ico.jpg",
 		splash: "../img/LordDarkDragon.jpg",
-		splashPosition: "center center",
 		index: 1,
-		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
+		lore: "The Lord Dark Dragon, The Dark horse of this team but actually the captain."
 	},
 	{
 		name: "Lord Alchemist Dragon",
-		title: "The Demolisher",
+		title: "The Potion Master",
 		icon: "../img/LAD_ico.jpg",
 		splash: "../img/LordAlchemistDragon.jpg",
-		splashPosition: "center 7%",
 		index: 2,
-		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
+		lore: "In a time of intelectual darkness a bright student made a potion that turned his skin into scales of a dragon. He is now Lord Alchemy Dragon and he finds new ways to satisfy his chemistry needs through team chemistry. Careful though, he is a reactive element and may blow you up."
 	},
 	{
 		name: "Lord Frost Dragon",
+		title: "The Frozen Hearted",
 		icon: "../img/LFD_ico.jpg",
 		splash: "../img/LordFrostDragon.jpg",
-		splashPosition: "center 15%",
 		index: 3,
-		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
-	}
+		lore: "Forged within the frozen wastelands of the lonely arctic, Lord Frost Dragon is no stranger to getting things done on his own. His ability to take teams apart one by one and find a way to score unassisted is next to none. However, when given crisp passes he only becomes more fearsome leaving the mightiest of goalies frozen."
+		}
 	];
 
 	$scope.splashDragon = {	};

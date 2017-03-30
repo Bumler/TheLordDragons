@@ -157,6 +157,7 @@
   filter: brightness(35%);
 }
 
+
 .content {
   text-align: center;
 }
@@ -190,18 +191,38 @@ p{
 }
 
 .footer{
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 //ANIMATIONS
 
 /* The starting CSS styles for the enter animation */
-fade.ng-enter {
+.fade.ng-enter {
   transition:0.5s linear all;
   opacity:0;
 }
 
 /* The finishing CSS styles for the enter animation */
-fade.ng-enter.ng-enter-active {
+.fade.ng-enter.ng-enter-active {
   opacity:1;
 }
+
+/* The starting CSS styles for the enter animation */
+.longFade{
+  animation: fadein 2s;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }  
+}
+.dim.ng-enter {
+  transition:0.5s linear all;
+  filter: brightness(0%);
+}
+
+.dim.ng-enter.ng-enter-active {
+  filter: brightness(35%);
+}
+
+

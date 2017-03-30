@@ -8,7 +8,7 @@
 	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
 	<script src="/node_modules/angular/angular.js"></script>
 	<script src ="app\app.js"></script>
-	<script src="/node_modules/angular-animate/angular-animate.js"></script>
+	<script src="/node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="/node_modules/angular-touch/angular-touch.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
@@ -16,19 +16,8 @@
 
 <body ng-controller="lordDragonController">
 	<div class="container-fluid site-background">
-<!-- 		<section class="hero" style="background: url({{splashDragon.splash}}) no-repeat; background-position: {{splashDragon.splashPosition}}; background-size: cover;">
-			<div class="row gradient no-margins" style="padding-top: 7vh">
-				<div class="col-sm-12 col-md-6 col-lg-6">
-				</div>
-				<div class="col-lg-2"></div>
-				<div class="col-sm-12 col-md-6 col-lg-4">
-					<h1>The Lord Dragons</h1>
-					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h1>
-					</div>
-				</div>
-			</section> -->
 			<div class="hero">
-				<div class="hero-text">
+				<div class="hero-text long-fade">
 					<h1>The Lord Dragons</h1>
 					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h2>
 				</div>
@@ -48,27 +37,27 @@
 
 			<div class="row y-margin">
 				<h1 class="content">Some of our highlights</h1>
-				<div class="col-lg-4 col-md-3 col-sm-2"></div>
-				<iframe class="col-lg-4 col-md-6 col-sm-8 col-xs-12" height="315" src="https://www.youtube.com/embed/WBXys0QhXRA" frameborder="0" allowfullscreen></iframe>
-				<div class="col-lg-4 col-md-3 col-sm-2"></div>
+				<div class="col-lg-4 col-md-2 col-sm-2"></div>
+				<iframe class="col-lg-4 col-md-8 col-sm-8 col-xs-12" height="315" src="https://www.youtube.com/embed/WBXys0QhXRA" frameborder="0" allowfullscreen></iframe>
+				<div class="col-lg-4 col-md-2 col-sm-2"></div>
 			</div>
 
 			<div class="row yy-margin">
 				<h1 class="content">Meet the Dragons</h1>
 			</div>
 			<div class="row">
-				<div class="col-lg-2 col-sm-2"></div>
-				<div class="col-lg-8 col-sm-8 content">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8 col-md-12 col-sm-12 content">
 					<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
 					ng-repeat="dragon in dragons" 
 					ng-src={{dragon.icon}}>
 				</div>
-				<div class="col-lg-2 col-sm-2"></div>
+				<div class="col-lg-2"></div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-2 col-sm-2"></div>
-				<div class="col-lg-8 col-sm-8 col-xs-12">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8 col-sm-12 col-xs-12">
 						<div>
 							<div uib-carousel active="active" no-wrap="noWrapSlides" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
 								<div uib-slide ng-repeat="dragon in dragons track by dragon.index" index="dragon.index">
