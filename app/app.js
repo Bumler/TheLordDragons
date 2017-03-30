@@ -27,7 +27,7 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		icon: "../img/LDD_ico.jpg",
 		splash: "../img/LordDarkDragon.jpg",
 		index: 1,
-		lore: "The Lord Dark Dragon, The Dark horse of this team but actually the captain."
+		lore: "\"Even though I walk through the darkest valley, I will fear no evil. For I am the evil. At my darkest hour you'll find me in the back of your net with the ball. I am the darkness that will drop your rank lower than the depths of hell. Once I am done with you, you'll be in a dark place where not even the light touch a victory can save you. I am the monster your teammates warned you about...\""
 	},
 	{
 		name: "Lord Alchemist Dragon",
