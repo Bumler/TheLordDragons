@@ -51,15 +51,24 @@
     left: 0;
     right: 0;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      top: 60%;
+    }
 
     h1 {
       font-size: 7rem;
       font-weight: 300;
+      @media screen and (max-width: 425px) {
+        font-size: 4rem;
+      }
     }
 
     h2{
       font-size: 3.5rem;
       font-weight: 300;
+      @media screen and (max-width: 425px) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -175,6 +184,18 @@ p{
   
   @media screen and (max-width: 768px) {
     font-size: 18px;
+  }
+}
+
+.splash-header{
+  @media screen and (max-width: 425px) {
+    font-size: 24px;
+  }
+}
+
+.lore-text {
+  @media screen and (max-width: 425px) {
+    font-size: 0px;
   }
 }
 

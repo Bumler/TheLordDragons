@@ -39,12 +39,21 @@
     left: 0;
     right: 0;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .hero .hero-text {
+        top: 60%; } }
     .hero .hero-text h1 {
       font-size: 7rem;
       font-weight: 300; }
+      @media screen and (max-width: 425px) {
+        .hero .hero-text h1 {
+          font-size: 4rem; } }
     .hero .hero-text h2 {
       font-size: 3.5rem;
       font-weight: 300; }
+      @media screen and (max-width: 425px) {
+        .hero .hero-text h2 {
+          font-size: 2rem; } }
 
 .hero-a {
   height: 50vh;
@@ -125,6 +134,14 @@ p {
   @media screen and (max-width: 768px) {
     p {
       font-size: 18px; } }
+
+@media screen and (max-width: 425px) {
+  .splash-header {
+    font-size: 24px; } }
+
+@media screen and (max-width: 425px) {
+  .lore-text {
+    font-size: 0px; } }
 
 .y-margin {
   margin-top: 15px; }

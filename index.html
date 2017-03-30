@@ -63,9 +63,9 @@
 								<div uib-slide ng-repeat="dragon in dragons track by dragon.index" index="dragon.index">
 									<img ng-src="{{dragon.splash}}" ng-class="{'splash': hover === true}" style="margin:auto; width: 100%">
 									<div class="carousel-caption" ng-show="hover">
-										<h1>{{dragon.name}}</h1>
+										<h1 class="splash-header">{{dragon.name}}</h1>
 										<p>{{dragon.title}}</p>
-										<p>{{dragon.lore}}</p>
+										<p class="lore-text">{{dragon.lore}}</p>
 									</div>
 								</div>
 							</div>
