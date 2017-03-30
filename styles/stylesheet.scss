@@ -10,7 +10,62 @@
   color: #fff;
 }
 
-.hero {
+.hero{
+  height: 100vh;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  img{
+    position: absolute;
+    height: auto;
+    min-height: 100vh;
+    min-width: 100%;
+    display: block;
+
+    //this centers the overflow
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  } 
+
+  .gradient {
+    content: '';
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .8; 
+
+  }
+
+  .hero-text {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+
+    top: 70%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    h1 {
+      font-size: 7rem;
+      font-weight: 300;
+    }
+
+    h2{
+      font-size: 3.5rem;
+      font-weight: 300;
+    }
+  }
+
+}
+
+.hero-a {
   // background: url('../img/LordDarkDragon.jpg') no-repeat center center;
   //background-size: cover;
   height: 50vh; 
@@ -48,13 +103,13 @@
   }
   
   @media screen and (max-width: 768px) {
-  .drag-img{
+    .drag-img{
       margin: 0 auto;
       height: 10rem;
       width: 10rem;
-  }
+    }
 
-  h2 {
+    h2 {
       font-size: 1.5rem;
       padding-left: 30px;
       padding-right: 30px;
@@ -136,4 +191,17 @@ p{
 
 .footer{
   margin-top: 50px;
+}
+
+//ANIMATIONS
+
+/* The starting CSS styles for the enter animation */
+fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+fade.ng-enter.ng-enter-active {
+  opacity:1;
 }

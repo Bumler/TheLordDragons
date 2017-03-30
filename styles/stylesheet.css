@@ -8,58 +8,97 @@
   color: #fff; }
 
 .hero {
+  height: 100vh;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+  .hero img {
+    position: absolute;
+    height: auto;
+    min-height: 100vh;
+    min-width: 100%;
+    display: block;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .hero .gradient {
+    content: '';
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; }
+  .hero .hero-text {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    top: 70%;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .hero .hero-text h1 {
+      font-size: 7rem;
+      font-weight: 300; }
+    .hero .hero-text h2 {
+      font-size: 3.5rem;
+      font-weight: 300; }
+
+.hero-a {
   height: 50vh;
   margin-left: -15px;
   margin-right: -15px; }
-  .hero .gradient {
+  .hero-a .gradient {
     content: '';
     height: 50vh;
     background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
     opacity: .8; }
-  .hero h1 {
+  .hero-a h1 {
     color: #fff;
     font-size: 3.5rem;
     font-weight: 300;
     text-align: center; }
-  .hero h2 {
+  .hero-a h2 {
     color: #fff;
     line-height: 1.75em;
     font-size: 1.5rem;
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem; }
-  .hero .drag-img {
+  .hero-a .drag-img {
     background: url("../img/dragonIco.png") no-repeat center center;
     background-size: cover;
     height: 10rem;
     width: 10rem;
     display: block; }
   @media screen and (max-width: 768px) {
-    .hero .drag-img {
+    .hero-a .drag-img {
       margin: 0 auto;
       height: 10rem;
       width: 10rem; }
-    .hero h2 {
+    .hero-a h2 {
       font-size: 1.5rem;
       padding-left: 30px;
       padding-right: 30px; } }
   @media screen and (min-width: 769px) {
-    .hero .drag-img {
+    .hero-a .drag-img {
       margin: 0 auto;
       height: 20rem;
       width: 20rem; }
-    .hero h2 {
+    .hero-a h2 {
       font-size: 2.5rem; } }
   @media screen and (min-width: 992px) {
-    .hero .tech-img {
+    .hero-a .tech-img {
       height: 20rem;
       width: 20rem; }
-    .hero h1 {
+    .hero-a h1 {
       padding-top: 3rem;
       font-size: 5rem; }
-    .hero h2 {
+    .hero-a h2 {
       font-size: 3rem; }
-    .hero .drag-img {
+    .hero-a .drag-img {
       margin-left: 5rem;
       height: 30rem;
       width: 30rem; } }
@@ -98,3 +137,12 @@ p {
 
 .footer {
   margin-top: 50px; }
+
+/* The starting CSS styles for the enter animation */
+fade.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0; }
+
+/* The finishing CSS styles for the enter animation */
+fade.ng-enter.ng-enter-active {
+  opacity: 1; }

@@ -16,10 +16,9 @@
 
 <body ng-controller="lordDragonController">
 	<div class="container-fluid site-background">
-		<section class="hero" style="background: url({{splashDragon.splash}}) no-repeat; background-position: {{splashDragon.splashPosition}}; background-size: cover;">
+<!-- 		<section class="hero" style="background: url({{splashDragon.splash}}) no-repeat; background-position: {{splashDragon.splashPosition}}; background-size: cover;">
 			<div class="row gradient no-margins" style="padding-top: 7vh">
 				<div class="col-sm-12 col-md-6 col-lg-6">
-					<div class="drag-img"></div>
 				</div>
 				<div class="col-lg-2"></div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
@@ -27,7 +26,16 @@
 					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h1>
 					</div>
 				</div>
-			</section>
+			</section> -->
+			<div class="hero">
+				<div class="hero-text">
+					<h1>The Lord Dragons</h1>
+					<h2>A Fearsome Clan Dedicated to Crushing Square Asses</h2>
+				</div>
+				<img ng-src={{splashDragon.splash}}>
+				<div class="gradient"></div>
+			</div>
+
 
 			<div class ="row">
 				<div class="col-lg-3"></div>
@@ -53,7 +61,7 @@
 				<div class="col-lg-8 col-sm-8 content">
 					<img class="col-lg-3 col-sm-3 col-xs-3 y-margin-bot no-padding"
 					ng-repeat="dragon in dragons" 
-					src={{dragon.icon}}>
+					ng-src={{dragon.icon}}>
 				</div>
 				<div class="col-lg-2 col-sm-2"></div>
 			</div>
