@@ -12,3 +12,6 @@ node-sass -o styles styles/stylesheet.scss
 a:
 cd documents/webdesign/thelorddragons
 Browser-sync start --server --directory --files “**/*”
+
+cd devworkspace/thelorddragons
+Browser-sync start --server --directory --files “**/*”
