@@ -19,7 +19,8 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		icon: "../img/LSD_ico.jpg",
 		splash: "../img/LordSpaceDragon.jpg",
 		splashPosition: "center center",
-		index: 0
+		index: 0,
+		lore: "Lord Space Dragon floats through the cosmos bringing epic saves and beautiful goals wherever he travels. With the ability to fly at the speed of light and strike with the force of a thousand suns opponents would have better luck trying to escape a black hole than defeat Lord Space Dragon."
 	},
 	{
 		name: "Lord Dark Dragon",
@@ -27,7 +28,8 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		icon: "../img/LDD_ico.jpg",
 		splash: "../img/LordDarkDragon.jpg",
 		splashPosition: "center center",
-		index: 1
+		index: 1,
+		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
 	},
 	{
 		name: "Lord Alchemist Dragon",
@@ -35,14 +37,16 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate']
 		icon: "../img/LAD_ico.jpg",
 		splash: "../img/LordAlchemistDragon.jpg",
 		splashPosition: "center 7%",
-		index: 2
+		index: 2,
+		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
 	},
 	{
 		name: "Lord Frost Dragon",
 		icon: "../img/LFD_ico.jpg",
 		splash: "../img/LordFrostDragon.jpg",
 		splashPosition: "center 15%",
-		index: 3
+		index: 3,
+		lore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel iaculis quam. Integer ut interdum nisi, vitae pretium ligula. Nam suscipit lacus convallis purus auctor tincidunt. Ut nec massa vitae diam venenatis viverra vel at ante."
 	}
 	];
 
