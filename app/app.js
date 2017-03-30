@@ -1,4 +1,4 @@
-var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate'])
+var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate', 'ngTouch'])
 
 // LordDragonApp.config(function(){
 // 	//anything that needs to happen before the app runs
