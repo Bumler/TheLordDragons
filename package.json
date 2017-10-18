@@ -1,0 +1,12 @@
+{
+  "name": "TheLordDragons",
+  "version": "1.0.0",
+  "description": "A website for the worlds most fearsome clan",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
