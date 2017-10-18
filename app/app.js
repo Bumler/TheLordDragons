@@ -62,4 +62,15 @@ var lordDragonApp = angular.module('lordDragonApp', ['ui.bootstrap','ngAnimate',
 	};
 
 	$scope.selectSplash($scope.dragons[1]);
+
+	$(window).ready(updateHeight);
+	$(window).resize(updateHeight);
+	
+	function updateHeight()
+	{
+		var div = $('#dynamicheight');
+		var width = div.width() *.66;
+		
+		div.css('height', width);
+	}
 }]);
